@@ -9,9 +9,9 @@ version: 0.2
 #     KEYID: "5072E1F5"
 
 phases:
-  # pre_build:
-  #   commands:
-  #     - echo "Before running tests"
+  pre_build:
+      - echo "Before running build"
+      - /env/bin/python3 -m pip install --upgrade pip
   #     - sudo ls /root
   #     - pip install -r requirements.txt
   #     - echo "mysql-server mysql-server/root_password password ${DB_ROOT_PASSWORD}" |debconf-set-selections
@@ -24,7 +24,7 @@ phases:
   #     - mysql -hlocalhost -uroot -ppassword -P3306 -e "show databases;"
   build:
     commands:
-      - echo "Running all unit tests"
+      - echo "Running required builds"
       # - python manage.py test
   post_build:
     commands:
