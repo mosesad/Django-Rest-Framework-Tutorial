@@ -29,7 +29,7 @@ phases:
       - echo "Setting up environments"
       - python3 -m venv env
       - echo "Activating environments"
-      - source env/bin/activate
+      - env/bin/activate
       - echo "Upgrade pip"
       - python3 -m pip install --upgrade pip
       - echo "Check current dir"
