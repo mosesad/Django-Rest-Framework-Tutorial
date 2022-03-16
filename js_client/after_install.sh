@@ -2,15 +2,15 @@
 
 # Install libaries
 
-virtualenv -p python3 venv
-source venv/bin/activate
-pip install -r requirements.txt
+# virtualenv -p python3 venv
+# source venv/bin/activate
+# pip install -r requirements.txt
 
 cd /opt/var/frontend
-python manage.py migrate
+# python manage.py migrate
 # python manage.py collectstatic --no-input
 
-python manage.py runserver 8000
+python3 -m http.server 8111
 
 # # Set permission for all files
 # sudo chown -R www-data:www-data /var/www/

@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
 # Install libaries
-virtualenv -p python3 venv
-source venv/bin/activate
+python3 -m venv env
+source env/bin/activate
 pip install -r requirements.txt
 
 cd /opt/var/backend
