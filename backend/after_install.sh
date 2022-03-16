@@ -4,7 +4,7 @@
 /env/bin/python3 -m pip install --upgrade pip
 python3 -m venv env
 source env/bin/activate
-pip install -r requirements.txt
+pip install -r ../requirements.txt
 
 cd /opt/var/backend
 python manage.py migrate
