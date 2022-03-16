@@ -33,6 +33,7 @@ phases:
 artifacts:
   files:
     - 'backend/**/*'
+    - 'requirements.txt'
 cache:
   paths:
     - '/root/.cache/pip/**/*'
