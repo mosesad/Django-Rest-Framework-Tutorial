@@ -30,7 +30,6 @@ phases:
   post_build:
     commands:
       - echo Build completed on `date`
-      - mv backend/appspec.yml ../
 artifacts:
   files:
     - 'backend/**/*'
