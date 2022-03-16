@@ -16,4 +16,4 @@ hooks:
   # BeforeInstall:
   #     - location: ./backend/before_install.sh
   AfterInstall:
-      - location: ./backend/after_install.sh
+      - location: after_install.sh
