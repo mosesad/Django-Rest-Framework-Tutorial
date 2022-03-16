@@ -18,8 +18,9 @@ if auth_response.status_code == 200:
     get_response = requests.get(endpoint, headers=headers) 
     
     data = get_response.json()
-    next_url = data['next']
+    print(data)
     results = data['results']
+    next_url = data['next']
     print("next_url", next_url)
     print(results)
     # if next_url is not None:

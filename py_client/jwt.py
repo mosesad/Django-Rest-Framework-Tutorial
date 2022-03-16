@@ -81,6 +81,7 @@ class JWTClient:
         """
         _type = header_type or self.header_type
         token = self.access
+        print (token)
         if not token:
             return {}
         return {
