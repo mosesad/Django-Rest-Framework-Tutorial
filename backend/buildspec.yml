@@ -26,12 +26,11 @@ phases:
   build:
     commands:
       - echo "Running required builds"
-      # - python manage.py test
+      - mv backend/appspec.yml .
+      - ls -lart 
   post_build:
     commands:
       - echo Build completed on `date`
-      - mv backend/appspec.yml .
-      - ls -lart 
 artifacts:
   files:
     - 'backend/**/*'
