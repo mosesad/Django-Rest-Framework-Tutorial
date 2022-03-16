@@ -31,7 +31,7 @@ phases:
       - echo "check folders"
       - ls -lart env/bin
       - echo "Activating environments"
-      - sudo env/bin/activate
+      - ./env/bin/activate
       - echo "Upgrade pip"
       - python3 -m pip install --upgrade pip
       - echo "Check current dir"
