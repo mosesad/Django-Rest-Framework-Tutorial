@@ -14,7 +14,7 @@ ls -lart
 # pip install -r requirements.txt
 
 cd /opt/var/backend/backend
-python manage.py migrate
+python3 manage.py migrate
 # python manage.py collectstatic --no-input
 
 python manage.py runserver 8000
