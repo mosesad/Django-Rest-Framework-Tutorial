@@ -28,8 +28,10 @@ phases:
       - echo "Running required builds"
       - echo "Setting up environments"
       - python3 -m venv env
+      - echo "check folders"
+      - ls -lart env/bin
       - echo "Activating environments"
-      - env/bin/activate
+      - sudo env/bin/activate
       - echo "Upgrade pip"
       - python3 -m pip install --upgrade pip
       - echo "Check current dir"
