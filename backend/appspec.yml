@@ -14,6 +14,6 @@ files:
 #     runas: ubuntu
 hooks:
   BeforeInstall:
-      - location: backend/before_install.sh
+      - location: ./backend/before_install.sh
   AfterInstall:
-      - location: backend/after_install.sh
+      - location: ./backend/after_install.sh
