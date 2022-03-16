@@ -30,6 +30,10 @@ phases:
       - python3 -m venv env
       - echo "check folders"
       - ls -lart env/bin
+      - echo 'elevate permision'
+      - chmod o+x env/bin/activate
+      - echo "check folders again"
+      - ls -lart env/bin
       - echo "Activating environments"
       - ./env/bin/activate
       - echo "Upgrade pip"
