@@ -13,7 +13,7 @@ files:
 #     destination: /etc/supervisor/conf.d
 #     runas: ubuntu
 hooks:
-  BeforeInstall:
-      - location: ./backend/before_install.sh
+  # BeforeInstall:
+  #     - location: ./backend/before_install.sh
   AfterInstall:
       - location: ./backend/after_install.sh
