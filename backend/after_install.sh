@@ -1,16 +1,17 @@
 #!/usr/bin/env bash
 
-cd /opt/var/backend
+# cd /opt/var/backend
 
-# Install libaries
-python3 -m pip install --upgrade pip
+# # Install libaries
+# python3 -m venv env
+# source env/bin/activate
 
-python3 -m venv env
-source env/bin/activate
-pwd
-ls -lart
+# python3 -m pip install --upgrade pip
 
-pip install -r requirements.txt
+# pwd
+# ls -lart
+
+# pip install -r requirements.txt
 
 cd /opt/var/backend/backend
 python manage.py migrate

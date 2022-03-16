@@ -26,6 +26,18 @@ phases:
   build:
     commands:
       - echo "Running required builds"
+      - echo "Setting up environments"
+      - python3 -m venv env
+      - echo "Activating environments"
+      - source env/bin/activate
+      - echo "Upgrade pip"
+      - python3 -m pip install --upgrade pip
+      - echo "Check current dir"
+      - pwd
+      - echo "Check what is in the dir"
+      - ls -lart
+      - echo "Install python requirements"
+      - pip install -r requirements.txt
       - mv backend/appspec.yml .
       - ls -lart 
   post_build:
@@ -34,7 +46,7 @@ phases:
 artifacts:
   files:
     - 'backend/**/*'
-    - 'requirements.txt'
+    # - 'requirements.txt'
     - 'appspec.yml'
 cache:
   paths:
