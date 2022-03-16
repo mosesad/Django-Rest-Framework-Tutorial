@@ -1,15 +1,15 @@
 #!/usr/bin/env bash
 
-# cd /opt/var/backend
+cd /opt/var/backend
 
-# # Install libaries
+# Install libaries
 # python3 -m venv env
-# source env/bin/activate
+source env/bin/activate
 
 # python3 -m pip install --upgrade pip
 
-# pwd
-# ls -lart
+pwd
+ls -lart
 
 # pip install -r requirements.txt
 
