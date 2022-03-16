@@ -16,4 +16,4 @@ hooks:
   # BeforeInstall:
   #     - location: server_configs/scripts/before_install.sh
   AfterInstall:
-      - location: after_install.sh
+      - location: backend/after_install.sh
