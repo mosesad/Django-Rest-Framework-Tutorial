@@ -1,1 +1,2 @@
-echo 'nothing to perform for before install'
+echo 'perform cleanup before install'
+rm -rf
