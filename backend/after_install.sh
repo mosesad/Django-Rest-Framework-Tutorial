@@ -6,12 +6,12 @@ cd /opt/var/backend
 # python3 -m venv env
 source env/bin/activate
 
-# python3 -m pip install --upgrade pip
+python3 -m pip install --upgrade pip
 
 pwd
 ls -lart
 
-# pip install -r requirements.txt
+pip install -r requirements.txt
 
 cd /opt/var/backend/backend
 python3 manage.py migrate

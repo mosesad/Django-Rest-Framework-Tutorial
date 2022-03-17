@@ -1,2 +1,2 @@
 echo 'perform cleanup before install'
-rm -rf
+rm -rf /opt/var/backend
